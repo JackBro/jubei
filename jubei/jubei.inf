@@ -1,0 +1,26 @@
+[Version]
+Signature="$Windows NT$"
+Class=Printer
+ClassGuid={4D36E979-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=jubei.cat
+ClassVer=4.0
+DriverVer=08/01/2012,1.0.0.0
+
+[DestinationDirs]
+DefaultDestDir = 66000
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+
+
+[Strings]
+ManufacturerName=""
+DiskName="jubei Installation Disk"

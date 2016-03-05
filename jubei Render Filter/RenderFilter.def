@@ -1,0 +1,15 @@
+;
+;   File Name:
+;
+;      RenderFilter.def
+;
+;   Abstract:
+;
+;      Defines DLL exports for jubeiRenderFilter.dll
+;
+
+LIBRARY jubeiRenderFilter
+
+EXPORTS
+    DllGetClassObject PRIVATE
+    DllCanUnloadNow PRIVATE

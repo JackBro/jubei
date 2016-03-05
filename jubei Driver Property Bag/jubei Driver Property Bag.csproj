@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">$DPB_driverCurrentWindowsConfigurationName$ Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF2CB89B-24BB-4F43-BFD2-97388E042C05}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>jubei_Driver_Property_Bag</RootNamespace>
+    <AssemblyName>MyPropertyBag.bag</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '$DPB_driverCurrentWindowsConfigurationName$ Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!--
+      Retrieve the WDK install location from the registry. The location of the tool under the WDK install directory is
+      fixed.
+  -->
+  <PropertyGroup>
+    <WDKContentRoot Condition="'$(WDKContentRoot)' == ''">$(WindowsSDK80Path)</WDKContentRoot>
+    <DriverPropertyBagTool>"$(WDKContentRoot)tools\x86\DriverPropertyBagTool.exe"</DriverPropertyBagTool>
+  </PropertyGroup>
+  <!--
+    Properties that determine where the property bag file is placed.
+
+    Currently, the property bag is copied to the project output directory (i.e. a fixed location), so that it may be added
+    to the list of files to be packaged.
+  -->
+  <PropertyGroup>
+    <PropertyBagOutputDir>$(OutputPath)</PropertyBagOutputDir>
+    <PropertyBagFile>$(PropertyBagOutputDir)\$(AssemblyName)</PropertyBagFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="PropertySet.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ByteArray\" />
+    <Folder Include="IStream\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PropertyBagOutputFiles Include="$(PropertyBagOutputDir)\\*" Exclude="$(PropertyBagOutputDir)\\*vshost.exe" />
+  </ItemGroup>
+  <Target Name="Clean">
+    <Delete Files="@(PropertyBagOutputFiles)" />
+  </Target>
+  <Target Name="Build" Outputs="$(OutputFile)" DependsOnTargets="Clean">
+    <Exec Command="$(DriverPropertyBagTool) /add &quot;%(Content.FullPath)&quot; /type PropertySet /target &quot;$(PropertyBagFile)&quot;" Condition="Exists(%(Content.FullPath)) And '%(Content.RelativeDir)'==''" />
+    <Exec Command="$(DriverPropertyBagTool) /add &quot;%(Content.FullPath)&quot; /type ByteArray /target &quot;$(PropertyBagFile)&quot;" Condition="'%(Content.RelativeDir)'=='ByteArray\'" />
+    <Exec Command="$(DriverPropertyBagTool) /add &quot;%(Content.FullPath)&quot; /type IStream /target &quot;$(PropertyBagFile)&quot;" Condition="'%(Content.RelativeDir)'=='IStream\'" />
+  </Target>
+  <Target Name="ReBuild" DependsOnTargets="Clean;Build" />
+</Project>

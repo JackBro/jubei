@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jubei", "jubei\jubei.vcxproj", "{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jubei Driver Property Bag", "jubei Driver Property Bag\jubei Driver Property Bag.csproj", "{DF2CB89B-24BB-4F43-BFD2-97388E042C05}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jubei Render Filter", "jubei Render Filter\jubei Render Filter.vcxproj", "{49028CC8-B324-494C-A83C-E242C434D29B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jubei Package", "jubei Package\jubei Package.vcxproj", "{D07B3740-AA11-4BE4-811F-C0F17E232308}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB} = {7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		$DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		$DPB_driverCurrentWindowsConfigurationName$ Release|x64 = $DPB_driverCurrentWindowsConfigurationName$ Release|x64
+		$DPB_driverCurrentWindowsConfigurationName$ Release|x86 = $DPB_driverCurrentWindowsConfigurationName$ Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.$DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU.ActiveCfg = Release|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.$DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU.Build.0 = Release|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.$DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU.Deploy.0 = Release|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.$DPB_driverCurrentWindowsConfigurationName$ Release|x64.ActiveCfg = Release|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.$DPB_driverCurrentWindowsConfigurationName$ Release|x64.Build.0 = Release|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.$DPB_driverCurrentWindowsConfigurationName$ Release|x64.Deploy.0 = Release|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.$DPB_driverCurrentWindowsConfigurationName$ Release|x86.ActiveCfg = Release|Win32
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.$DPB_driverCurrentWindowsConfigurationName$ Release|x86.Build.0 = Release|Win32
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.$DPB_driverCurrentWindowsConfigurationName$ Release|x86.Deploy.0 = Release|Win32
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Debug|x64.ActiveCfg = Debug|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Debug|x64.Build.0 = Debug|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Debug|x64.Deploy.0 = Debug|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Debug|x86.Build.0 = Debug|Win32
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Debug|x86.Deploy.0 = Debug|Win32
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Release|Any CPU.ActiveCfg = Release|Win32
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Release|x64.ActiveCfg = Release|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Release|x64.Build.0 = Release|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Release|x64.Deploy.0 = Release|x64
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Release|x86.ActiveCfg = Release|Win32
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Release|x86.Build.0 = Release|Win32
+		{7BE29B94-8F49-45D9-AC9D-06AFEC8CB1EB}.Release|x86.Deploy.0 = Release|Win32
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.$DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU.ActiveCfg = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.$DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU.Build.0 = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.$DPB_driverCurrentWindowsConfigurationName$ Release|x64.ActiveCfg = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.$DPB_driverCurrentWindowsConfigurationName$ Release|x64.Build.0 = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.$DPB_driverCurrentWindowsConfigurationName$ Release|x86.ActiveCfg = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.$DPB_driverCurrentWindowsConfigurationName$ Release|x86.Build.0 = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Debug|Any CPU.ActiveCfg = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Debug|Any CPU.Build.0 = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Debug|x64.ActiveCfg = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Debug|x64.Build.0 = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Debug|x86.ActiveCfg = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Debug|x86.Build.0 = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Release|Any CPU.ActiveCfg = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Release|Any CPU.Build.0 = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Release|x64.ActiveCfg = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Release|x64.Build.0 = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Release|x86.ActiveCfg = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{DF2CB89B-24BB-4F43-BFD2-97388E042C05}.Release|x86.Build.0 = $DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU
+		{49028CC8-B324-494C-A83C-E242C434D29B}.$DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU.ActiveCfg = Release|x64
+		{49028CC8-B324-494C-A83C-E242C434D29B}.$DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU.Build.0 = Release|x64
+		{49028CC8-B324-494C-A83C-E242C434D29B}.$DPB_driverCurrentWindowsConfigurationName$ Release|x64.ActiveCfg = Release|x64
+		{49028CC8-B324-494C-A83C-E242C434D29B}.$DPB_driverCurrentWindowsConfigurationName$ Release|x64.Build.0 = Release|x64
+		{49028CC8-B324-494C-A83C-E242C434D29B}.$DPB_driverCurrentWindowsConfigurationName$ Release|x86.ActiveCfg = Release|Win32
+		{49028CC8-B324-494C-A83C-E242C434D29B}.$DPB_driverCurrentWindowsConfigurationName$ Release|x86.Build.0 = Release|Win32
+		{49028CC8-B324-494C-A83C-E242C434D29B}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{49028CC8-B324-494C-A83C-E242C434D29B}.Debug|x64.ActiveCfg = Debug|x64
+		{49028CC8-B324-494C-A83C-E242C434D29B}.Debug|x64.Build.0 = Debug|x64
+		{49028CC8-B324-494C-A83C-E242C434D29B}.Debug|x86.ActiveCfg = Debug|Win32
+		{49028CC8-B324-494C-A83C-E242C434D29B}.Debug|x86.Build.0 = Debug|Win32
+		{49028CC8-B324-494C-A83C-E242C434D29B}.Release|Any CPU.ActiveCfg = Release|Win32
+		{49028CC8-B324-494C-A83C-E242C434D29B}.Release|x64.ActiveCfg = Release|x64
+		{49028CC8-B324-494C-A83C-E242C434D29B}.Release|x64.Build.0 = Release|x64
+		{49028CC8-B324-494C-A83C-E242C434D29B}.Release|x86.ActiveCfg = Release|Win32
+		{49028CC8-B324-494C-A83C-E242C434D29B}.Release|x86.Build.0 = Release|Win32
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.$DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU.ActiveCfg = Release|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.$DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU.Build.0 = Release|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.$DPB_driverCurrentWindowsConfigurationName$ Release|Any CPU.Deploy.0 = Release|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.$DPB_driverCurrentWindowsConfigurationName$ Release|x64.ActiveCfg = Release|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.$DPB_driverCurrentWindowsConfigurationName$ Release|x64.Build.0 = Release|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.$DPB_driverCurrentWindowsConfigurationName$ Release|x64.Deploy.0 = Release|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.$DPB_driverCurrentWindowsConfigurationName$ Release|x86.ActiveCfg = Release|Win32
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.$DPB_driverCurrentWindowsConfigurationName$ Release|x86.Build.0 = Release|Win32
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.$DPB_driverCurrentWindowsConfigurationName$ Release|x86.Deploy.0 = Release|Win32
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Debug|x64.ActiveCfg = Debug|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Debug|x64.Build.0 = Debug|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Debug|x64.Deploy.0 = Debug|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Debug|x86.ActiveCfg = Debug|Win32
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Debug|x86.Build.0 = Debug|Win32
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Debug|x86.Deploy.0 = Debug|Win32
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Release|Any CPU.ActiveCfg = Release|Win32
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Release|x64.ActiveCfg = Release|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Release|x64.Build.0 = Release|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Release|x64.Deploy.0 = Release|x64
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Release|x86.ActiveCfg = Release|Win32
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Release|x86.Build.0 = Release|Win32
+		{D07B3740-AA11-4BE4-811F-C0F17E232308}.Release|x86.Deploy.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
